@@ -2,3 +2,4 @@
 /Variable.class
 *.class
 .gitignore
+.project
