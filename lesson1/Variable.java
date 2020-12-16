@@ -1,4 +1,4 @@
-package dinsv.startjava.lesson1;
+package lesson1;
 
 public class Variable {
 	public static void main(String[] args) {
