@@ -11,6 +11,7 @@ public class Cycle {
 		for(int i = 0; i <= 20; i++) {
 			System.out.println(i);
 		}
+
 		System.out.println("Выведите на консоль с помощью цикла while все числа от [6, -6] (с шагом итерации 2)");
 		int z = 6;
 		while(z >= -6) {
@@ -21,14 +22,13 @@ public class Cycle {
 		System.out.println("Подсчитайте с помощью цикла do-while сумму нечетных чисел от [10, 20]. Выведите ее на консоль");
 		int a = 10;
 		int x = 0;
-		do{
+		do {
 			a = ++a;
-			if(a % 2 != 0){
+			if(a % 2 != 0) {
 				x = x + a;
 			}
 			}
 		while(a <= 20);
-		
-			System.out.println(x);
+		System.out.println(x);
 	}
 }
