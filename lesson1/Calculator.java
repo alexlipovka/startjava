@@ -32,7 +32,7 @@ public class Calculator {
 				result = a * a + result;
 				b--;
 				}
-			System.out.println("your result = " + result);
-			}
+		System.out.println("your result = " + result);
+		}
 	}
 }
