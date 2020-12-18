@@ -5,33 +5,28 @@ public class Calculator {
 		int a = 10;
 		int b = 5;
 		char operation = '^';
-		int result = 0 ;
+		int result = 1;
 
 		if(operation == '+') {
 			result = a + b;
 			System.out.println("your result = " + result);
-		}
-		if(operation == '-') {
+		} else if(operation == '-') {
 			result = a - b;
 			System.out.println("your result = " + result);
-		}
-		if(operation == '*') {
+		} else if(operation == '*') {
 			result = a * b;
 			System.out.println("your result = " + result);
-		}
-		if(operation == '/') {
+		} else if(operation == '/') {
 			result = a / b;
 			System.out.println("your result = " + result);
-		}
-		if(operation == '%') {
+		} else if(operation == '%') {
 			result = a % b;
 			System.out.println("your result = " + result);
-		}
-		if(operation == '^') {
+		} else if(operation == '^') {
 			while(b >= 1) {
-				result = a * a + result;
+				result = result * a;
 				b--;
-				}
+			}
 		System.out.println("your result = " + result);
 		}
 	}
