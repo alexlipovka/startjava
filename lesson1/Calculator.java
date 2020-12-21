@@ -21,7 +21,7 @@ public class Calculator {
 			while(b >= 1) {
 				result *= a;
 				b--;
-			}
+		}
 		}
 		System.out.println("your result = " + result);
 	}
