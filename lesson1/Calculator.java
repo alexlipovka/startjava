@@ -2,8 +2,8 @@ package lesson1;
 
 public class Calculator {
 	public static void main(String[] args) {
-		int a = 10;
-		int b = 5;
+		int a = 2;
+		int b = 10;
 		char operation = '^';
 		int result = 1;
 
