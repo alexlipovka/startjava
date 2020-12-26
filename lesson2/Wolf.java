@@ -1,5 +1,3 @@
-package lesson2;
-
 public class Wolf {
   
   String sex;
