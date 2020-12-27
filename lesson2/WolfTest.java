@@ -2,15 +2,29 @@ public class WolfTest {
   public static void main(String[] args) {
     Wolf wolf1 = new Wolf();
 
-    wolf1.name = "Volchok";
-    /*wolf1.color = "gray";
-    wolf1.age = 4;
-    wolf1.weight = 15.7;
-    wolf1.sex = "male"; 
-    System.out.println(wolf1.name + " " + wolf1.color + " " + wolf1.age + " " + wolf1.weight + " " + wolf1.sex);
-*/
-    System.out.println(wolf1.name);
+    wolf1.setName("Volchok");
+    wolf1.setSex("male");
+    wolf1.setWeight(15.7);
+    wolf1.setAge(7);
+    wolf1.setColor("Pink");
+    wolf1.setPrey(0);
+   
+    System.out.println(wolf1.getName());
+    System.out.println(wolf1.getSex());
+    System.out.println(wolf1.getWeight());
+    System.out.println(wolf1.getAge());
+    System.out.println(wolf1.getColor());
+    wolf1.run();
 
-  }
-
+    if(wolf1.hunts() == true) {
+        System.out.println(wolf1.getName() + " following the trail"); 
+        }
+        else { 
+            System.out.println(wolf1.getName() + " did not find animals");
+        }
+    System.out.println(wolf1.yowl());
+    }
 }
+
+
+
