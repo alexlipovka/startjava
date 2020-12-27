@@ -19,8 +19,8 @@ public class WolfTest {
     if(wolf1.hunts() == true) {
         System.out.println(wolf1.getName() + " following the trail"); 
         }
-        else { 
-            System.out.println(wolf1.getName() + " did not find animals");
+    else { 
+        System.out.println(wolf1.getName() + " did not find animals");
         }
     System.out.println(wolf1.yowl());
     }
