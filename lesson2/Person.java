@@ -20,33 +20,11 @@ public class Person {
 		return talk;
 	}
 
-   void run() {
+  	 void run() {
 		System.out.println("I'm old for this");
-
 	}
 
 	void learnJava() {
 		System.out.println("Bill is studying Java");
-
 	}
-
-/* Bill все равно поедет на рыбалку
-	когда будет хорошая погода
-	public void hello() {
-		System.out.println("Hello!");
-	}
-	public boolean toFish() {
-		if (goodWeather == true) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-		public void bye() {
-		System.out.println("see you soon");
-	}
-		public String say(String aWord) {
-		String answerBill = "Ok, no problem" + aWord;
-		return answerBill;
-	}*/
 }
