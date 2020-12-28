@@ -27,7 +27,7 @@ public class Wolf {
     public boolean hunts() {
         if(prey > 0) {
             return true;
-        }   else {
+        } else {
             return false;
         }
     }
@@ -64,7 +64,7 @@ public class Wolf {
         if(variableAge > 8) {
           System.out.println("Incorrect age!");
         } else {
-          age = variableAge;
+            age = variableAge;
         }
     }
 
