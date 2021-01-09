@@ -8,20 +8,20 @@ public class Wolf {
     private int prey; // добыча для реализации метода охота
 
     public void go() {
-      System.out.println(name + " go");
+        System.out.println(name + " go");
     }
 
     public void sit() {
-      System.out.println(name + " sit");
+        System.out.println(name + " sit");
     }
 
     public void run() {
-      System.out.println(name + " run");
+        System.out.println(name + " run");
     }
 
     public String yowl() {
-      String yowl = "ouuuu";
-      return yowl;
+        String yowl = "ouuuu";
+        return yowl;
     }
 
     public boolean hunts() {

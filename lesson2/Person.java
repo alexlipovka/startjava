@@ -20,7 +20,7 @@ public class Person {
 		return talk;
 	}
 
-  	 void run() {
+  	void run() {
 		System.out.println("I'm old for this");
 	}
 
