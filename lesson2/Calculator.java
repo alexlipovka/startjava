@@ -7,21 +7,22 @@ public class Calculator {
 	private boolean restart = true; // для проверки рестарт или завершение
 	private String answer; // ответ пользователя 
 
-	public int result(char operation) {
-	 	case '+': result = a + b;
-	 		break;
-	 	case '-': result = a - b;
-	 		break;
-	 	case '*': result = a * b;
-	 		break;
-	 	case '/': result = a / b;
-	 		break;
-	 	case '%': result = a % b;
-	 		break;
-	 	case '^': while(b >= 1) {
-					result = a * a;
-					b--;
-					} 
+	
+	switch(input.operation) {
+		case '+': result = a + b;
+			break;
+		case '-': result = a - b;
+			break;
+		case '*': result = a * b;
+			break;
+		case '/': result = a / b;
+			break;
+		case '%': result = a % b;
+			break;
+		case '^': while(b >= 1) {
+			result *= a;
+			b--;
+			} 
 	}
 
 	public void calcResult() {
@@ -31,7 +32,8 @@ public class Calculator {
 	public boolean restart(String ansver) {
 		if(answer == "y") {
 			return true;
-		} else false;
+		} else if(answer == "n") {
+		}	return false;
 	}
 
 	public void setA(int a) {
