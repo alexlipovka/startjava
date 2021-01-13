@@ -6,7 +6,6 @@ public class Calculator {
 	private int result = 1;
 	private boolean restart = true; // для проверки рестарт или завершение
 	private String answer; // ответ пользователя 
-
 	
 	switch(input.operation) {
 		case '+': result = a + b;
@@ -33,7 +32,7 @@ public class Calculator {
 		if(answer == "y") {
 			return true;
 		} else if(answer == "n") {
-		}	return false;
+		} return false;
 	}
 
 	public void setA(int a) {
