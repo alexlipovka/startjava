@@ -15,13 +15,13 @@ public class Calculator {
 	case '*': result = a * b;
 	    break;
 	case '/': result = a / b;
-	break;
-	    case '%': result = a % b;
-	break;
-	    case '^': while(b >= 1) {
-		result *= a;
-		b--;
-		}
+	    break;
+	case '%': result = a % b;
+	    break;
+	case '^': while(b >= 1) {
+	    result *= a;
+	    b--;
+	    }
     }
 
     public void calcResult() {
@@ -30,9 +30,9 @@ public class Calculator {
 
     public boolean restart(String ansver) {
 	if(answer == "y") {
-	return true;
+	    return true;
 	} else if(answer == "n") {
-	    } return false;
+	} return false;
     }
 
     public void setA(int a) {
