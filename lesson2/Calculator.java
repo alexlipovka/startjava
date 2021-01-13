@@ -9,28 +9,28 @@ public class Calculator {
 	
     switch(input.operation) {
 	case '+': result = a + b;
-	break;
+	    break;
 	case '-': result = a - b;
-	break;
+	    break;
 	case '*': result = a * b;
-	break;
+	    break;
 	case '/': result = a / b;
 	break;
-	case '%': result = a % b;
+	    case '%': result = a % b;
 	break;
-	case '^': while(b >= 1) {
-	result *= a;
-	b--;
-	} 
+	    case '^': while(b >= 1) {
+		result *= a;
+		b--;
+		}
     }
 
     public void calcResult() {
-	    System.out.println("your result = " + result);	
-	}
+        System.out.println("your result = " + result);	
+    }
 
     public boolean restart(String ansver) {
 	if(answer == "y") {
-		return true;
+	return true;
 	} else if(answer == "n") {
 	    } return false;
     }
