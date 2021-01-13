@@ -9,45 +9,45 @@ public class Calculator {
 	
     switch(input.operation) {
 	case '+': result = a + b;
-		break;
+	break;
 	case '-': result = a - b;
-		break;
+	break;
 	case '*': result = a * b;
-		break;
+	break;
 	case '/': result = a / b;
-		break;
+	break;
 	case '%': result = a % b;
-		break;
+	break;
 	case '^': while(b >= 1) {
-		result *= a;
-		b--;
-		} 
+	result *= a;
+	b--;
+	} 
     }
 
     public void calcResult() {
 	    System.out.println("your result = " + result);	
 	}
 
-	public boolean restart(String ansver) {
-		if(answer == "y") {
-			return true;
-		} else if(answer == "n") {
-		} return false;
-	}
+    public boolean restart(String ansver) {
+	if(answer == "y") {
+		return true;
+	} else if(answer == "n") {
+	    } return false;
+    }
 
-	public void setA(int a) {
-		a = this.a;
-	}
+    public void setA(int a) {
+	a = this.a;
+    }
 
-	public int getA() {
-		return a;
-	}
+    public int getA() {
+	return a;
+    }
 
-	public void setB(int b) {
-		b = this.b;
-	}
+    public void setB(int b) {
+	b = this.b;
+    }
 
-	public int getB() {
-		return b;
-	}
+    public int getB() {
+	return b;
+    }
 }
