@@ -3,15 +3,16 @@ package lesson2;
 import java.util.Scanner;
 
 public class CalculatorTest {
-	public static void main(String[] args) {
-		do {
-			System.out.println("Введите первое число");
-			Scanner input = new Scanner(System.in);
-				if(input.hasNaextInt()) {
-					input.setA(input.nextInt);
-				} while(input.hasNaxtInt() == false);
-		}
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+         do {
+            System.out.println("Enter first number");
+                if(in.hasNextInt()) {
+                    int z = in.nextInt();
+                    System.out.println("your input " +  z);
+                }
+        } while (!in.hasNextInt());
 
-	}
+    }
 
-}	
+}   

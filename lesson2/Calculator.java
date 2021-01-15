@@ -31,7 +31,7 @@ public class Calculator {
     }
 
     public void printResult() {
-        System.out.println("your result = " + result);  
+        System.out.println("your result = " + result);
     }
 
     public boolean setRestart(String answer) {
