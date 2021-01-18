@@ -1,4 +1,4 @@
-public class JagerTest {
+public class JaegerTest {
 
 	public static void main(String[] args) {
 		Jager strike = new Jager();

@@ -1,5 +1,3 @@
-package lesson2;
-
 public class Calculator {
     private int a, b;           // переменные с которыми будут производится действия
     private char operation; // действие
@@ -7,7 +5,7 @@ public class Calculator {
     private boolean restart = true; // для проверки рестарт или завершение
     private String answer; // ответ пользователя 
     
-    public void setResult(char operation) {
+    public void setResult(char operation) { 
         switch(this.operation) {
             case '+': result = a + b;
                 break;
@@ -57,7 +55,7 @@ public class Calculator {
     }
 
     public void setA(int a) {
-        a = this.a;
+        this.a = a;
     }
 
     public int getA() {
@@ -65,7 +63,7 @@ public class Calculator {
     }
 
     public void setB(int b) {
-        b = this.b;
+        this.b = b;
     }
 
     public int getB() {

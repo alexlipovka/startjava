@@ -1,4 +1,4 @@
-public class Jager {
+public class Jaeger {
 	private String launched;
 	private String mark;
 	private String origin;
