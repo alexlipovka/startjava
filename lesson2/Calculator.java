@@ -1,9 +1,11 @@
+package dinsv.calc;
+
 public class Calculator {
-    private int a, b;           // переменные с которыми будут производится действия
-    private char operation; // действие
-    private int result = 1;
-    private boolean restart = true; // для проверки рестарт или завершение
-    private String answer; // ответ пользователя 
+    private int a, b;           
+    private char operation; 
+    private boolean restart = true; 
+    private String answer;
+    int result = 1;
     
     public void setResult(char operation) { 
         switch(this.operation) {
@@ -18,8 +20,9 @@ public class Calculator {
             case '%': result = a % b;
                 break;
             case '^': while(b >= 1) {
-                result *= a;
+                result *=a;
                 b--;
+                //result = r;
                 }
         }
     }
@@ -33,14 +36,19 @@ public class Calculator {
     }
 
     public boolean setRestart(String answer) {
-        if(this.answer == "y") {
-            return true;
-        } else if(this.answer == "n") {
-        } return false;
+        if(this.answer == "yes") {
+            return restart = true;
+        } else if(this.answer == "no") {
+        } return restart = false;
     }
+    
+    public boolean getRestart() {
+        return restart;
+        }
+    
 
     public String getAnswer() {
-        return answer;
+       return answer;
     }
 
     public void setAnswer(String answer) {
@@ -59,7 +67,7 @@ public class Calculator {
     }
 
     public int getA() {
-        return a;
+       return a;
     }
 
     public void setB(int b) {
