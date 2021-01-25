@@ -1,11 +1,10 @@
-package dinsv.calc;
-
 public class Calculator {
-    private int a, b;           
+    private int a;
+    private int b;           
     private char operation; 
-    private boolean restart = true; 
-    private String answer;
-    int result = 1;
+    private boolean restart; 
+    private char answer;
+    long result = 1l;
     
     public void setResult(char operation) { 
         switch(this.operation) {
@@ -22,36 +21,34 @@ public class Calculator {
             case '^': while(b >= 1) {
                 result *=a;
                 b--;
-                //result = r;
                 }
         }
     }
 
-    public int getResult() {
+    public long getResult() {
         return result;
     }
 
     public void printResult() {
         System.out.println("your result = " + result);
     }
-
-    public boolean setRestart(String answer) {
-        if(this.answer == "yes") {
+    
+    public boolean setRestart(char answer) {
+        if(answer == 'y') {
             return restart = true;
-        } else if(this.answer == "no") {
+        } else if(answer == 'n') {
         } return restart = false;
     }
     
     public boolean getRestart() {
         return restart;
-        }
+    }
     
-
-    public String getAnswer() {
+    public char getAnswer() {
        return answer;
     }
 
-    public void setAnswer(String answer) {
+    public void setAnswer(char answer) {
         this.answer = answer;
     }
 
