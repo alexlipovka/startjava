@@ -20,12 +20,10 @@ public class CalculatorTest {
             System.out.println("want to use the program again? enter y / n ");
             do {
                 char playerAnswer = scan.next().charAt(0);
-                if(calc.getRestart() == true) {
-                    calc.setRestart(playerAnswer);
+                if(calc.setRestart(playerAnswer) == true) {
                     System.out.println("You have chosen: continue");
                     break;
-                } else if(calc.getRestart() == false) {
-                    calc.setRestart(playerAnswer);
+                } else if(calc.setRestart(playerAnswer) == false) {
                     System.out.println("You have chosen: to stop");
                     break;
                 } else {
