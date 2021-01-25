@@ -1,27 +1,30 @@
 public class Calculator {
-    private int a;
-    private int b;           
+    private int a, b;           
     private char operation; 
     private boolean restart; 
     private char answer;
-    long result = 1l;
+    long result = 1;
     
-    public void setResult(char operation) { 
+    public void calculate() { 
         switch(this.operation) {
-            case '+': result = a + b;
+            case '+': System.out.println("Your result = " + (a + b));
                 break;
-            case '-': result = a - b;
+            case '-': System.out.println("Your result = " + (a - b));
                 break;
-            case '*': result = a * b;
+            case '*': System.out.println("Your result = " + (a * b));
                 break;
-            case '/': result = a / b;
+            case '/': System.out.println("Your result = " + (a / b));
                break;
-            case '%': result = a % b;
+            case '%': System.out.println("Your result = " + (a % b));
                 break;
             case '^': while(b >= 1) {
                 result *=a;
                 b--;
+                if(b==1) {
+                    System.out.println("Your result = " + result);
                 }
+            }
+                   
         }
     }
 
