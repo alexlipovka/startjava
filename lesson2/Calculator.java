@@ -7,17 +7,23 @@ public class Calculator {
     
     public void calculate() { 
         switch(this.operation) {
-            case '+': System.out.println("Your result = " + (a + b));
+            case '+': 
+                System.out.println("Your result = " + (a + b));
                 break;
-            case '-': System.out.println("Your result = " + (a - b));
+            case '-': 
+                System.out.println("Your result = " + (a - b));
                 break;
-            case '*': System.out.println("Your result = " + (a * b));
+            case '*': 
+                System.out.println("Your result = " + (a * b));
                 break;
-            case '/': System.out.println("Your result = " + (a / b));
+            case '/': 
+                System.out.println("Your result = " + (a / b));
                break;
-            case '%': System.out.println("Your result = " + (a % b));
+            case '%': 
+                System.out.println("Your result = " + (a % b));
                 break;
-            case '^': while(b >= 1) {
+            case '^': 
+                while(b >= 1) {
                 result *=a;
                 b--;
                 if(b==1) {
