@@ -1,129 +1,141 @@
 public class Jaeger {
-	private String launched;
-	private String mark;
-	private String origin;
-	private float height;
-	private float weight;
-	private int speed;
-	private int strenght;
-	private int armor;
-	private String equipment;
-	private String energyCore;
-	private String weapon;
-	private String bodyL;
-	private String powerMove;
-	private int distance;
-	
-	public void move(int time) {
-		 distance = speed * time;
-	}
-	
-	public String getLaunched() {
-		return launched;
-	}
+    private String launched;
+    private String mark;
+    private String origin;
+    private float height;
+    private float weight;
+    private int speed;
+    private int strenght;
+    private int armor;
+    private String equipment;
+    private String energyCore;
+    private String weapon;
+    private String bodyL;
+    private String powerMove;
+    private int distance;
 
-	public void setLaunched(String launched) {
-		this.launched = launched;
-	}
+    public Jaeger(String launched, String mark, String origin, float height, float weight, int speed,
+                  int strenght, int armor) {
+        this.launched = launched;
+        this.mark = mark;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strenght = strenght;
+        this.armor = armor;
 
-	public String getMark() {
-		return mark;
-	}
+    }
 
-	public void setMark(String mark) {
-		this.mark = mark;
-	}
+    public void move(int time) {
+        distance = speed * time;
+    }
 
-	public String getOrigin() {
-		return origin;
-	}
+    public String getLaunched() {
+        return launched;
+    }
 
-	public void setOrigin(String origin) {
-		this.origin = origin;
-	}
+    public void setLaunched(String launched) {
+        this.launched = launched;
+    }
 
-	public float getHeight() {
-		return height;
-	}
+    public String getMark() {
+        return mark;
+    }
 
-	public void setHeight(float height) {
-		this.height = height;
-	}
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
 
-	public float getWeight() {
-		return weight;
-	}
+    public String getOrigin() {
+        return origin;
+    }
 
-	public void setWeight(float weight) {
-		this.weight = weight;
-	}
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
 
-	public int getSpeed() {
-		return speed;
-	}
+    public float getHeight() {
+        return height;
+    }
 
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
+    public void setHeight(float height) {
+        this.height = height;
+    }
 
-	public int getStrenght() {
-		return strenght;
-	}
+    public float getWeight() {
+        return weight;
+    }
 
-	public void setStrenght(int strenght) {
-		this.strenght = strenght;
-	}
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
 
-	public int getArmor() {
-		return armor;
-	}
+    public int getSpeed() {
+        return speed;
+    }
 
-	public void setArmor(int armor) {
-		this.armor = armor;
-	}
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
-	public String getEquipment() {
-		return equipment;
-	}
+    public int getStrenght() {
+        return strenght;
+    }
 
-	public void setEquipment(String equipment) {
-		this.equipment = equipment;
-	}
+    public void setStrenght(int strenght) {
+        this.strenght = strenght;
+    }
 
-	public String getEnergyCore() {
-		return energyCore;
-	}
+    public int getArmor() {
+        return armor;
+    }
 
-	public void setEnergyCore(String energyCore) {
-		this.energyCore = energyCore;
-	}
+    public void setArmor(int armor) {
+        this.armor = armor;
+    }
 
-	public String getWeapon() {
-		return weapon;
-	}
+    public String getEquipment() {
+        return equipment;
+    }
 
-	public void setWeapon(String weapon) {
-		this.weapon = weapon;
-	}
+    public void setEquipment(String equipment) {
+        this.equipment = equipment;
+    }
 
-	public String getBodyL() {
-		return bodyL;
-	}
+    public String getEnergyCore() {
+        return energyCore;
+    }
 
-	public void setBodyL(String bodyL) {
-		this.bodyL = bodyL;
-	}
+    public void setEnergyCore(String energyCore) {
+        this.energyCore = energyCore;
+    }
 
-	public String getPowerMove() {
-		return powerMove;
-	}
+    public String getWeapon() {
+        return weapon;
+    }
 
-	public void setPowerMove(String powerMove) {
-		this.powerMove = powerMove;
-	}
-	
-	public int getDistance() {
-		return distance;
-	}
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public String getBodyL() {
+        return bodyL;
+    }
+
+    public void setBodyL(String bodyL) {
+        this.bodyL = bodyL;
+    }
+
+    public String getPowerMove() {
+        return powerMove;
+    }
+
+    public void setPowerMove(String powerMove) {
+        this.powerMove = powerMove;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
 
 }
