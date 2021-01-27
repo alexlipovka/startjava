@@ -3,7 +3,7 @@ public class Calculator {
     private char operation; 
     private boolean restart; 
     private char answer;
-    long result = 1;
+    long result;
     
     public void calculate() { 
         switch(this.operation) {
@@ -23,6 +23,7 @@ public class Calculator {
                 System.out.println("Your result = " + (a % b));
                 break;
             case '^': 
+                result = 1;
                 while(b >= 1) {
                 result *=a;
                 b--;
