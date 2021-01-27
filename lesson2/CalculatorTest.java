@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalculatorTest {   
+public class CalculatorTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Calculator calc = new Calculator();
@@ -16,22 +16,25 @@ public class CalculatorTest {
             calc.setB(scan.nextInt());
             calc.calculate();
             scan.reset();
-            
+
             System.out.println("want to use the program again? enter y / n ");
+            char playerAnswer;
             do {
-                char playerAnswer = scan.next().charAt(0);
-                if(calc.setRestart(playerAnswer) == true) {
+                playerAnswer = scan.next().charAt(0);
+                calc.setAnswer(playerAnswer);
+                if(playerAnswer == 'y') {
+                    calc.setRestart(playerAnswer);
                     System.out.println("You have chosen: continue");
                     break;
-                } else if(calc.setRestart(playerAnswer) == false) {
+                } else if(playerAnswer == 'n') {
+                    calc.setRestart(playerAnswer);
                     System.out.println("You have chosen: to stop");
                     break;
                 } else {
                     System.out.println("you entered an invalid value, please try again");
-                    }
-            } while(calc.getRestart() == true);
-        } while(calc.getRestart() == true);
+                }
+            } while(calc.getAnswer() != 'y' && calc.getAnswer() != 'n');
+        } while(calc.getRestart());
         scan.close();
-    } 
+    }
 }
-
