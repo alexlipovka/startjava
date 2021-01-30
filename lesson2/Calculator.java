@@ -6,32 +6,6 @@ public class Calculator {
     private char answer;
     long result;
 
-    public void calculate() {
-        switch(this.operation) {
-            case '+':
-                System.out.println("Your result = " + (a + b));
-                break;
-            case '-':
-                System.out.println("Your result = " + (a - b));
-                break;
-            case '*':
-                System.out.println("Your result = " + (a * b));
-                break;
-            case '/':
-                System.out.println("Your result = " + (a / b));
-                break;
-            case '%':
-                System.out.println("Your result = " + (a % b));
-                break;
-            case '^':
-                result = 1;
-                for(int i = 0; i < b; i++) {
-                    result *= a;
-                }
-                System.out.println("Your result = " + result);    
-        }
-    }
-
     public boolean setRestart(char answer) {
         if(answer == 'y') {
             return restart = true;
@@ -61,5 +35,31 @@ public class Calculator {
 
     public void setB(int b) {
         this.b = b;
+    }
+
+    public void calculate() {
+        switch(this.operation) {
+            case '+':
+                System.out.println("Your result = " + (a + b));
+                break;
+            case '-':
+                System.out.println("Your result = " + (a - b));
+                break;
+            case '*':
+                System.out.println("Your result = " + (a * b));
+                break;
+            case '/':
+                System.out.println("Your result = " + (a / b));
+                break;
+            case '%':
+                System.out.println("Your result = " + (a % b));
+                break;
+            case '^':
+                result = 1;
+                for(int i = 0; i < b; i++) {
+                    result *= a;
+                }
+                System.out.println("Your result = " + result);    
+        }
     }
 }
