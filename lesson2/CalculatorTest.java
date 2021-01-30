@@ -24,12 +24,8 @@ public class CalculatorTest {
                 calc.setAnswer(playerAnswer);
                 if(playerAnswer == 'y') {
                     calc.setRestart(playerAnswer);
-                    System.out.println("You have chosen: continue");
-                    break;
                 } else if(playerAnswer == 'n') {
                     calc.setRestart(playerAnswer);
-                    System.out.println("You have chosen: to stop");
-                    break;
                 } else {
                     System.out.println("you entered an invalid value, please try again");
                 }

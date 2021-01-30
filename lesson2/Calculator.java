@@ -25,14 +25,10 @@ public class Calculator {
                 break;
             case '^':
                 result = 1;
-                while(b >= 1) {
-                result *=a;
-                b--;
-                if(b==1) {
-                    System.out.println("Your result = " + result);
+                for(int i = 0; i < b; i++) {
+                    result *= a;
                 }
-            }
-
+                System.out.println("Your result = " + result);    
         }
     }
 
@@ -52,22 +48,18 @@ public class Calculator {
     }
 
     public void setAnswer(char answer) {
-
         this.answer = answer;
     }
 
     public void setOperation(char operation) {
-
         this.operation = operation;
     }
 
     public void setA(int a) {
-
         this.a = a;
     }
 
     public void setB(int b) {
-
         this.b = b;
     }
 }
