@@ -1,9 +1,32 @@
 import java.util.Scanner;
 
 public class CalculatorTest {
+    private boolean restart;
+    private char answer;
+    public boolean setRestart(char answer) {
+        if(answer == 'y') {
+            return restart = true;
+        } else if(answer == 'n') {
+        } return restart = false;
+    }
+
+    public boolean getRestart() {
+        return restart;
+    }
+    
+    public char getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(char answer) {
+        this.answer = answer;
+    }
+    
     public static void main(String[] args) {
+        CalculatorTest answeCycle = new CalculatorTest();
         Scanner scan = new Scanner(System.in);
         Calculator calc = new Calculator();
+                
         do {
             System.out.println("Enter first number");
             calc.setA(scan.nextInt());
@@ -21,16 +44,16 @@ public class CalculatorTest {
             char playerAnswer;
             do {
                 playerAnswer = scan.next().charAt(0);
-                calc.setAnswer(playerAnswer);
+                answeCycle.setAnswer(playerAnswer);
                 if(playerAnswer == 'y') {
-                    calc.setRestart(playerAnswer);
+                    answeCycle.setRestart(playerAnswer);
                 } else if(playerAnswer == 'n') {
-                    calc.setRestart(playerAnswer);
+                    answeCycle.setRestart(playerAnswer);
                 } else {
                     System.out.println("you entered an invalid value, please try again");
                 }
-            } while(calc.getAnswer() != 'y' && calc.getAnswer() != 'n');
-        } while(calc.getRestart());
+            } while(answeCycle.getAnswer() != 'y' && answeCycle.getAnswer() != 'n');
+        } while(answeCycle.getRestart());
         scan.close();
     }
 }
