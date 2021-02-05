@@ -21,9 +21,9 @@ public class CalculatorTest {
             System.out.println("want to use the program again? enter y / n ");
             do {
                 playerAnswer = scan.next().charAt(0);
-                if(playerAnswer != 'y' && playerAnswer != 'n') {
-                    System.out.println("you entered an invalid value, please try again");
-                }
+                if(playerAnswer == 'n' || playerAnswer == 'y') {
+                    break;
+                } else System.out.println("you entered an invalid value, please try again");
             } while(playerAnswer != 'y' && playerAnswer != 'n');
         } while(playerAnswer == 'y');
         scan.close();

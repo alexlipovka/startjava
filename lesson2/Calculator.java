@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public void calculate() {
-        switch(this.operation) {
+        switch(operation) {
             case '+':
                 System.out.println("Your result = " + (a + b));
                 break;
