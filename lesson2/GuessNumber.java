@@ -1,5 +1,6 @@
 public class GuessNumber {
-    private int inputNumber;
+    пока пишу в 2х классах
+    /*private int inputNumber;
     private int answer;
     Player player1;
     Player player2;
@@ -30,4 +31,4 @@ public class GuessNumber {
     public void setInputNumber(int inputNumber) {
         this.inputNumber = inputNumber;
     }
-}
+}*/
