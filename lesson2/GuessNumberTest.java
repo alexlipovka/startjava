@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
@@ -6,6 +7,9 @@ public class GuessNumberTest {
         Player player1 = new Player("Vasya");
 
         Player player2 = new Player("Kolya");
-        System.out.println(player1, player2);
+        System.out.println("угадайте число");
+        Random randomInt = new Random();
+        final answer = randomInt.nextUnt(101);
+        
     }
 }
