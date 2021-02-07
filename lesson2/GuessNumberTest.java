@@ -1,3 +1,5 @@
+package startjava.lesson2.game;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -16,10 +18,11 @@ public class GuessNumberTest {
         game.setGuessNumber(randomInt.nextInt(101));
         
         do {
-            
+             System.out.println(player1.getName() + " guess the number from 0 to 100");
             game.setTryGuessPl1(input.nextInt());
+             System.out.println(player2.getName() + " guess the number from 0 to 100");
             game.setTryGuessPl2(input.nextInt());
-            game.getWin();
+            game.getWin(input.nextInt(), input.nextInt());
            /* do {
                 System.out.println(player1.getName() + " guess the number from 0 to 100");
                 player1.setInputNumber(input.nextInt());

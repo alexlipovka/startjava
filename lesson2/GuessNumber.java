@@ -3,8 +3,8 @@ public class GuessNumber {
     private int tryGuess1;
     private int tryGuess2;
     
-    Player pl1;
-    Player pl2;
+    Player player1;
+    Player player2;
     
     public GuessNumber() {
         
@@ -34,29 +34,29 @@ public class GuessNumber {
         return tryGuess2;
     }
     
-    public void getWin() {
+    public void getWin(int tryGuess1, int tryGuess2) {
         do {
-            System.out.println(pl1.getName() + " guess the number from 0 to 100");
-            pl1.setInputNumber(tryGuess1);
-            if(pl1.getInputNumber() == guessNumber) {
-                System.out.println(pl1.getName() + " Win!");
+            System.out.println(player1.getName() + " guess the number from 0 to 100");
+            player1.setInputNumber(tryGuess1);
+            if(player1.getInputNumber() == guessNumber) {
+                System.out.println(player1.getName() + " Win!");
                 break;             
-            } else if(pl1.getInputNumber() < guessNumber) {
+            } else if(player1.getInputNumber() < guessNumber) {
                 System.out.println("your number is less than the guesswork");
-            } else if(pl1.getInputNumber() > guessNumber) {
+            } else if(player1.getInputNumber() > guessNumber) {
                 System.out.println("your number is greater than the envisioned");
             }
     
-            System.out.println(pl2.getName() + " guess the number from 0 to 100");
-            pl2.setInputNumber(tryGuess2);
-            if(pl2.getInputNumber() == guessNumber) {
-                System.out.println(pl2.getName() + " Win!");
+            System.out.println(player2.getName() + " guess the number from 0 to 100");
+            player2.setInputNumber(tryGuess2);
+            if(player2.getInputNumber() == guessNumber) {
+                System.out.println(player2.getName() + " Win!");
                 break;
-            } else if(pl2.getInputNumber() < guessNumber) {
+            } else if(player2.getInputNumber() < guessNumber) {
                 System.out.println("your number is less than the guesswork");
-            } else if(pl2.getInputNumber()> guessNumber) {
+            } else if(player2.getInputNumber()> guessNumber) {
                 System.out.println("your number is greater than the envisioned");
             } 
-        } while (pl1.getInputNumber() != guessNumber && pl2.getInputNumber() != guessNumber);
+        } while (player1.getInputNumber() != guessNumber && player2.getInputNumber() != guessNumber);
     }
 }
