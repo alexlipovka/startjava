@@ -12,32 +12,38 @@ public class GuessNumberTest {
         System.out.println("First player "+ player1.getName() + " "+ "second player " + player2.getName());
         System.out.println("Guess the number Start");
         Random randomInt = new Random();
-        int answer = randomInt.nextInt(101);
+        GuessNumber game = new GuessNumber();
+        game.setGuessNumber(randomInt.nextInt(101));
+        
         do {
-            do {
+            
+            game.setTryGuessPl1(input.nextInt());
+            game.setTryGuessPl2(input.nextInt());
+            game.getWin();
+           /* do {
                 System.out.println(player1.getName() + " guess the number from 0 to 100");
                 player1.setInputNumber(input.nextInt());
-                if(player1.getInputNumber() == answer) {
+                if(player1.getInputNumber() == game.getGuessNumber()) {
                     System.out.println(player1.getName() + " Win!");
                     break;
-                } else if(player1.getInputNumber() < answer) {
+                } else if(player1.getInputNumber() < game.getGuessNumber()) {
                     System.out.println("your number is less than the guesswork");
-                } else if(player1.getInputNumber() > answer) {
+                } else if(player1.getInputNumber() > game.getGuessNumber()) {
                     System.out.println("your number is greater than the envisioned");
                 }
 
                 System.out.println(player2.getName() + " guess the number from 0 to 100");
                 player2.setInputNumber(input.nextInt());
-                if(player2.getInputNumber() == answer) {
+                if(player2.getInputNumber() == game.getGuessNumber()) {
                     System.out.println(player2.getName() + " Win!");
                     break;
-                } else if(player2.getInputNumber() < answer) {
+                } else if(player2.getInputNumber() < game.getGuessNumber()) {
                     System.out.println("your number is less than the guesswork");
-                } else if(player2.getInputNumber()> answer) {
+                } else if(player2.getInputNumber()> game.getGuessNumber()) {
                     System.out.println("your number is greater than the envisioned");
                 } 
-            } while (player1.getInputNumber() != answer && player2.getInputNumber() != answer);
-            System.out.println("want to use the program again? enter y / n ");
+            } while (player1.getInputNumber() != game.getGuessNumber() && player2.getInputNumber() != game.getGuessNumber());
+           */  System.out.println("want to use the program again? enter y / n ");
                 do {
                     playerAnswer = input.next().charAt(0);
                     if(playerAnswer == 'n' || playerAnswer == 'y') {
@@ -47,4 +53,5 @@ public class GuessNumberTest {
         } while(playerAnswer == 'y');
         input.close();
     }
+
 }
