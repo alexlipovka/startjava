@@ -1,10 +1,10 @@
-// package startjava.lesson2.game;
+package lesson2;
 
 import java.util.Scanner;
 import java.util.Random;
 
-import Player.java;
-import GuessNumber.java;
+// import Player.java;
+// import GuessNumber.java;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
